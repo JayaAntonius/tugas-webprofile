@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profil Pribadi</title>
+
+    <!-- Link ke Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        .profile-header {
+            background-color: #506b87;
+            color: rgb(255, 255, 255);
+            padding: 60px 0;
+            text-align: center;
+        }
+        .profile-header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .card-body {
+            text-align: left;
+        }
+        .social-icons i {
+            font-size: 1.5rem;
+            margin: 10px;
+        }
+        .social-icons i:hover {
+            color: #9fc3ea;
+        }
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .nav-link {
+            color: white !important;
+        }
+        .nav-link:hover {
+            color: #9fc3ea !important;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Header Profil -->
+<div class="profile-header">
+    <div class="container">
+        <img src="Profile.jpg" alt="Foto Profil" class="img-fluid mb-3">
+        <h1>Jaya Antonius</h1>
+
+        <!-- Tentang Saya -->
+        <p>
+            Halo, nama saya adalah <strong>Jaya Antonius</strong>. Saya seorang Mahasiswa semester III yang sedang berkuliah di salah satu University-MEDAN,
+            dan saya mengambil jurusan sistem informasi .
+        </p>
+        <p>
+            Saya berfokus pada segala tugas yang diberikan oleh dosen dan memahami setiap materi yang diberikan 
+            agar dapat menjadi dampak yang baik di lingkungan sekitar.
+        </p>
+    </div>
+</div>
+
+<!-- Navbar -->
+<nav class="bg-dark text-white">
+    <div class="container p-3">
+        <div class="row">
+            <div class="col-md-4 pb-2 text-md-center">
+                <i class="bi bi-envelope"></i>
+                <a href="mailto:jayasmjtk24@gmail.com" class="text-white text-decoration-none">jayasmjtk24@gmail.com</a>
+            </div>
+            <div class="col-md-4 pb-2 text-md-center">
+                <i class="bi bi-browser-chrome"></i>
+                <a href="#" class="text-white text-decoration-none">jaya.com</a>
+            </div>
+            <div class="col-md-4 pb-2 text-md-center">
+                <i class="bi bi-telephone"></i>
+                <a href="tel:+6285322536894" class="text-white text-decoration-none">+62 8532 2536 894</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Konten Utama -->
+<div class="container my-5">
+    <div class="row">
+        
+        <!-- Kolom Kiri (Detail Pribadi) -->
+        <div class="col-lg-12 mb-4">
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h3>Detail Pribadi</h3>
+                </div>
+                <div class="card-body">
+                    <!-- Tabel Data Pribadi -->
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Alamat:</th>
+                                <td>Jl. Perjuangan No.9, Kec. Tj Sari, Medan</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Tempat, Tanggal Lahir:</th>
+                                <td>Bah Raja I, Kab. Simalungun, Sumatera Utara, 03 MARET 2005</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Jenis Kelamin:</th>
+                                <td>Laki-laki</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Agama:</th>
+                                <td>Kristen</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Kewarganegaraan:</th>
+                                <td>Indonesia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Kolom Keterampilan dan Kontak (bersampingan) -->
+        <div class="col-lg-6">
+            <!-- Keterampilan -->
+            <div class="card shadow-sm mb-4">
+                <div class="card-header">
+                    <h3>Keterampilan</h3>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled">
+                        <li>HTML, CSS, JavaScript</li>
+                        <li>Desain Grafis</li>
+                        <li>UI/UX Design</li>
+                        <li>Corel Draw, Adobe Illustrator</li>
+                        <li>Bootstrap, Tailwind CSS</li>
+                        <li>Git & GitHub</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <!-- Kontak -->
+            <div class="card shadow-sm">
+                <div class="card-header">
+                    <h3>Kontak</h3>
+                </div>
+                <div class="card-body">
+                    <p><a href="mailto:jayasmjtk24@gmail.com" class="text-dark"><i class="bi bi-envelope"></i> jayasmjtk24@gmail.com</a></p>
+                    <p><a href="tel:+6285222526894" class="text-dark"><i class="bi bi-telephone"></i> +62 85222526894</a></p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" class="text-dark" target="_blank"><i class="bi bi-facebook"></i> Facebook</a><br>
+                        <a href="https://www.instagram.com/jaya_antonius17" class="text-dark" target="_blank"><i class="bi bi-instagram"></i> Instagram</a><br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Navbar Copyright -->
+<nav class="bg-dark text-white py-2">
+    <div class="container text-center">
+        <p class="mb-0">&copy; 2024 Jaya Antonius. All rights reserved.</p>
+    </div>
+</nav>
+
+<!-- Script Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pzjw8f+ua7Kw1TIq0unxXbVdCEFbFQmSCu2c5l5pNxJp6Rcf74nyH5ZaZPcvD6b9" crossorigin="anonymous"></script>
+
+</body>
+</html>
